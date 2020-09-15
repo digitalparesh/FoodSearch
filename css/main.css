@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fdffb6;
+  height: 15vh; }
+  .header .logo {
+    padding: 1rem;
+    display: flex;
+    align-items: center; }
+    .header .logo img {
+      border-radius: 50%; }
+    .header .logo h2 {
+      padding-left: 0.5rem;
+      font-family: "Courier New", Courier, monospace;
+      color: #000; }
+  .header .form form {
+    display: flex; }
+    .header .form form .search {
+      height: 2rem;
+      font-size: 0.7;
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      outline: none;
+      border: 1px solid #fff;
+      padding-left: 10px;
+      padding-right: 1rem; }
+    .header .form form .searchBtn {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background: #f4a261;
+      color: #fff;
+      border: none;
+      border: 1px solid #f4a261;
+      outline: none;
+      cursor: pointer;
+      padding: 0 10px; }
+  .header .like {
+    padding-right: 1rem;
+    padding: 1.2rem;
+    height: 100%; }
+    .header .like .tooltiptext {
+      margin: 0.5rem 1rem;
+      padding: 0.5rem; }
+      .header .like .tooltiptext .itemCart {
+        display: flex;
+        align-items: center;
+        margin: 5px 0; }
+        .header .like .tooltiptext .itemCart :hover {
+          cursor: pointer; }
+        .header .like .tooltiptext .itemCart .infoCart {
+          margin-left: 5px; }
+          .header .like .tooltiptext .itemCart .infoCart .publisherCart {
+            color: gray;
+            font-size: 0.9rem; }
+        .header .like .tooltiptext .itemCart .itemLogoCart {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%; }
+          .header .like .tooltiptext .itemCart .itemLogoCart img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%; }
+
+.main {
+  display: flex;
+  height: 100%;
+  border-top: 2px solid #fff; }
+  .main .left,
+  .main .right {
+    background: #fff;
+    width: 25%; }
+  .main .center {
+    width: 50%;
+    background: #fdffb6; }
+  .main .left .item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0; }
+    .main .left .item :hover {
+      cursor: pointer; }
+    .main .left .item .info,
+    .main .left .item .itemLogo {
+      margin-left: 10px; }
+    .main .left .item .info .publisher {
+      color: gray;
+      font-size: 0.9rem; }
+    .main .left .item .itemLogo {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%; }
+      .main .left .item .itemLogo img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%; }
+  .main .left .pagiDiv {
+    width: 30%;
+    margin: auto; }
+    .main .left .pagiDiv .pagi {
+      margin-top: 1rem;
+      border-radius: 10px;
+      background: #f4a261;
+      color: #fff;
+      border: none;
+      border: 1px solid #f4a261;
+      outline: none;
+      cursor: pointer;
+      padding: 0.2rem 0.9rem; }
+  .main .center {
+    padding: 1rem; }
+    .main .center .alighAuto {
+      margin: auto;
+      width: 100%; }
+      .main .center .alighAuto .itemcenter {
+        width: 100%;
+        padding: 1rem;
+        background: #fff;
+        border: 1px solid #dddddd; }
+        .main .center .alighAuto .itemcenter .mar {
+          width: 400px;
+          margin: auto; }
+          .main .center .alighAuto .itemcenter .mar .titlecenter p {
+            width: 400px;
+            font-size: 2rem;
+            color: #111111; }
+          .main .center .alighAuto .itemcenter .mar .imgcenter img {
+            height: 350px;
+            width: 400px; }
+          .main .center .alighAuto .itemcenter .mar .infocenter .wrap {
+            width: 400px;
+            display: flex;
+            justify-content: space-between; }
+            .main .center .alighAuto .itemcenter .mar .infocenter .wrap .publisher {
+              color: #5d5d5d; }
+            .main .center .alighAuto .itemcenter .mar .infocenter .wrap .rank {
+              color: tomato; }
+          .main .center .alighAuto .itemcenter .mar .infocenter .website a {
+            text-decoration: none;
+            color: lightseagreen; }
+          .main .center .alighAuto .itemcenter .mar .bTn {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.5rem; }
+            .main .center .alighAuto .itemcenter .mar .bTn .buy {
+              width: 40%;
+              border: none;
+              background: coral;
+              padding: 0.5rem;
+              cursor: pointer;
+              color: #fff; }
+            .main .center .alighAuto .itemcenter .mar .bTn .addtocart {
+              width: 40%;
+              border: none;
+              background: lightseagreen;
+              padding: 0.5rem;
+              cursor: pointer;
+              color: #fff; }
+  .main .right .heading-2 {
+    color: #f4a261;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3rem; }
+  .main .right .shoping-list {
+    margin: 0.5rem 1rem;
+    list-style: none;
+    height: 70vh;
+    overflow: scroll; }
+    .main .right .shoping-list .itemRight {
+      display: flex;
+      align-items: center;
+      margin: 5px 0; }
+      .main .right .shoping-list .itemRight :hover {
+        cursor: pointer; }
+      .main .right .shoping-list .itemRight .infoRight {
+        margin-left: 10px; }
+        .main .right .shoping-list .itemRight .infoRight .publisherRight {
+          color: gray;
+          font-size: 0.9rem; }
+      .main .right .shoping-list .itemRight .itemLogoRight {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%; }
+        .main .right .shoping-list .itemRight .itemLogoRight img {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%; }
+
+.footer {
+  background-color: #000;
+  padding: 1rem;
+  text-align: center; }
+  .footer p {
+    color: #fff; }
+    .footer p a {
+      text-decoration: none;
+      color: lightgreen; }

@@ -1,0 +1,26 @@
+.like {
+  position: relative;
+  display: inline-block;
+}
+
+.like .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 6px;
+  padding: 5px 0;
+  border: 1px solid lightblue;
+  box-shadow: 0px 0px 6px 5px #f2f2f2;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  right: 0;
+  margin-right: 0;
+}
+
+.like:hover .tooltiptext {
+  visibility: visible;
+}
